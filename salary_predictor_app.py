@@ -67,7 +67,9 @@ input_data = pd.DataFrame({
 
 # 🧠 One-hot encode inputs
 input_data_encoded = pd.get_dummies(input_data)
-model_columns = model.feature_names_in_
+import json
+with open("feature_cols.json") as f:
+    model_columns = json.load(f)
 
 # Add missing columns
 for col in model_columns:
