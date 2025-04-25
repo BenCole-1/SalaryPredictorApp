@@ -81,9 +81,6 @@ input_data_encoded = input_data_encoded[model_columns]
 
 # 🔍 Predict Salary
 if st.button("💰 Predict Salary"):
-    st.write("🧪 Input Data Shape:", input_data_encoded.shape)
-    st.write("🧪 Input Columns:", list(input_data_encoded.columns))
-    st.write("🧪 Model Expects:", len(model_columns), "columns")
     prediction_log = model.predict(input_data_encoded)[0]
     predicted_salary = np.expm1(prediction_log)  # reverse log1p
 
