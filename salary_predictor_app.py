@@ -89,5 +89,5 @@ if st.button("💰 Predict Salary"):
 # Footer
 st.markdown("---")
 st.markdown(
-    "<div style='text-align: center; font-size: 13px;'>✨ <i>Application Created By Philip Klim</i></div>",
+    "<div style='text-align: center; font-size: 13px;'>✨ <i>Application Created By Ben Cole</i></div>",
     unsafe_allow_html=True)
